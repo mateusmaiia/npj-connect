@@ -14,22 +14,37 @@ export function Header(){
                 />
                 
             </div>
-            <nav className='sla-container'>
-                <a href="">
+            <div className='sla-container'>
+                <a href="/">
                     <img 
                         className='user-icon'
                         src={UserIcon} 
                         alt="" 
                     />
                 </a>
-                <a href="">
+                <nav >
                     <img 
                         className='navbar-icon'
                         src={Navbar} 
                         alt="navbar" 
                     />
-                </a>
-            </nav>
+
+                    <ul>
+                        <li>
+                            <a href="#">Sobre</a>
+                        </li>
+                        <li>
+                            <a href="#">Quem somos?</a>
+                        </li>
+                        <li>
+                            <a href="#">O que fazemos? </a>
+                        </li>
+                        <li>
+                            <a href="#">Perguntas Frequentes</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </header>
     )
 }
