@@ -14,17 +14,22 @@ export function Header(){
                 />
                 
             </div>
-            <div className='sla-container'>
-                <img 
-                    className='user-icon'
-                    src={UserIcon} 
-                    alt="" 
-                />
-                <img 
-                    className='navbar-icon'
-                    src={Navbar} 
-                    alt="navbar" />
-            </div>
+            <nav className='sla-container'>
+                <a href="">
+                    <img 
+                        className='user-icon'
+                        src={UserIcon} 
+                        alt="" 
+                    />
+                </a>
+                <a href="">
+                    <img 
+                        className='navbar-icon'
+                        src={Navbar} 
+                        alt="navbar" 
+                    />
+                </a>
+            </nav>
         </header>
     )
 }
