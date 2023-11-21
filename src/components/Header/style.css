@@ -43,3 +43,54 @@ header{
     justify-content: space-between;
     align-items: center;
 }
+
+a{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover{
+    opacity: 0.7
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Montserrat;
+    
+    height: 100vh;
+    margin-top: 200px;
+}
+
+.nav-list {
+    height: 100vh;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+}
+
+@media  (max-width: 999px){
+    .nav-list{
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background-color:  rgba(217, 217, 217, 0.80);;
+    }    
+}

@@ -22,14 +22,17 @@ export function Header(){
                         alt="" 
                     />
                 </a>
+                    <a className='navbar-icon' href='/'>
+                        <img src={Navbar} alt="" />
+                    </a>
                 <nav >
-                    <img 
-                        className='navbar-icon'
-                        src={Navbar} 
-                        alt="navbar" 
-                    />
-
-                    <ul>
+                    <div className='mobile-menu'>
+                        <div className='line1'></div>
+                        <div className='line2'></div>
+                        <div className='line3'></div>
+                        <div className='line4'></div>
+                    </div>
+                    <ul className='nav-list'>
                         <li>
                             <a href="#">Sobre</a>
                         </li>
@@ -37,7 +40,7 @@ export function Header(){
                             <a href="#">Quem somos?</a>
                         </li>
                         <li>
-                            <a href="#">O que fazemos? </a>
+                            <a href="#">O que fazemos?</a>
                         </li>
                         <li>
                             <a href="#">Perguntas Frequentes</a>
