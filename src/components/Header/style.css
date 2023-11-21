@@ -1,0 +1,45 @@
+header{
+    width: 100%;
+    height: 68px;
+    flex-shrink: 0;
+    border-radius: 0px 0px 22px 22px;
+    background: #1B3560;
+    padding: 5px 10px 11px;
+    
+    display: flex;
+    justify-content: space-between;
+
+
+
+
+
+
+
+
+
+    position: fixed;
+    z-index: 2;
+}
+
+.logo-icon{
+    margin-top: 10px;
+    margin-left: -8px;
+    display: flex;
+    justify-content: left;
+    width: 68px;
+    height: 68px;
+    flex-shrink: 0;
+    align-items: center;
+}
+
+.sla-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo-container{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+}

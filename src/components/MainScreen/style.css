@@ -1,0 +1,102 @@
+main{
+    background-image: url(../../assets/testeBG.png);
+    background-repeat: no-repeat;
+    background-color:aquamarine;
+    text-align: center;
+    height: 73vh;
+    width: 100%;
+    
+
+    display: flex;
+    align-items: center;
+    padding: 70px;
+    flex-direction: column;
+
+    overflow: hidden;
+}
+
+.container-wrapper{
+    height: 700px;
+    width: 307px;
+    /*border: 1px solid #fff4;*/
+    margin: auto 0;
+    margin-top: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 19px;
+}
+
+.name{
+    width: 100%;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 23.711px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+
+    text-align: start;
+   
+}
+
+
+.name span{
+    color: #FAD21D;
+    font-family: Montserrat;
+    font-size: 23.711px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+
+.about-us{
+    vertical-align: auto;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 9.7px;
+    font-style: initial;
+    font-weight: 500;
+    line-height: 1.5;
+   
+    text-align: start;
+}
+
+.row{
+    content: "";
+    display: block;
+    border-bottom: 5px solid #fff;
+    width: 70px;
+    
+    margin-left: -153px;
+    
+}
+
+button{
+    
+    padding: 6px 13px;
+
+    border: none;
+    cursor: pointer;
+    width: 154px;font-family: Montserrat;
+    font-size: 18.824px;
+    font-style: normal;
+    font-weight: 800;
+    
+    flex-shrink: 0;
+    border-radius: 22.5px;
+    background: #FFF;
+    color: #032677;
+    font-family: Montserrat;
+    font-size: 18.824px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+
+
+    margin-top: 15px;
+    margin-left: -2px;
+}
