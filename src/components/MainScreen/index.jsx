@@ -11,8 +11,8 @@ export function MainScreen(){
                     </h1>
                 </div>
 
-                <div>
-                    <span className='row'></span>
+                <div className='row'>
+                    
                 </div>
 
                 <p className='about-us'>
@@ -24,7 +24,7 @@ export function MainScreen(){
                     suas necessidades específicas.
                 </p>
 
-                <button>
+                <button className='button'>
                     CONECTE-SE
                 </button>
             </section>

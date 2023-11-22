@@ -15,24 +15,26 @@ main{
     overflow: hidden;
 }
 
-@media (max-width: 768px) {
+@media all and (max-width: 768px) {
     main {
-     background-image: url(../../assets/img_bg/bg_img_390.png);
+     background-image: url(../../assets/img/bg_img_390.png);
+     background-repeat: no-repeat;
    }
 }
 
 .container-wrapper{
     height: 700px;
     width: 307px;
-    /*border: 1px solid #fff4;*/
+    border: 1px solid #fff4;
     margin: auto 0;
-    margin-top: 50px;
+    margin-top: 30px;
 
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: start;
     gap: 19px;
+    
 }
 
 .name{
@@ -77,11 +79,11 @@ main{
     border-bottom: 5px solid #fff;
     width: 70px;
     
-    margin-left: -153px;
-    
+    margin-right: -153px;
+    align-items: flex-start;
 }
 
-button{
+.button{
     
     padding: 6px 13px;
 
@@ -93,7 +95,7 @@ button{
     font-weight: 800;
     
     flex-shrink: 0;
-    border-radius: 22.5px;
+    border-radius: 22.2px;
     background: #FFF;
     color: #032677;
     font-family: Montserrat;
@@ -103,6 +105,6 @@ button{
     line-height: normal;
 
 
-    margin-top: 15px;
+    margin-top: -15px;
     margin-left: -2px;
 }
