@@ -1,5 +1,5 @@
 main{
-    background-image: url(../../assets/testeBG.png);
+    background-image: url(../../assets/img/bg_img_1920.png);
     background-repeat: no-repeat;
     background-color:aquamarine;
     text-align: center;
@@ -13,6 +13,12 @@ main{
     flex-direction: column;
 
     overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    main {
+     background-image: url(../../assets/img_bg/bg_img_390.png);
+   }
 }
 
 .container-wrapper{
