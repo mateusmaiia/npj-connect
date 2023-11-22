@@ -22,10 +22,10 @@ export function Header(){
                         alt="" 
                     />
                 </a>
+                <nav >
                     <a className='navbar-icon' href='/'>
                         <img src={Navbar} alt="" />
                     </a>
-                <nav >
                     <div className='mobile-menu'>
                         <div className='line1'></div>
                         <div className='line2'></div>

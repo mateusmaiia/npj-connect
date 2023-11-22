@@ -1,12 +1,13 @@
 import { Footer } from "../../components/Footer";
-import { Header } from "../../components/Header";
+
 import { MainScreen } from "../../components/MainScreen";
+import {OffcanvasExample} from "../../components/Navbar";
 
 export function Main() {
 
   return (
     <>
-      <Header />
+      <OffcanvasExample />
       <MainScreen />
       <Footer />
     </>
