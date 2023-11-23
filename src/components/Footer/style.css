@@ -1,45 +1,48 @@
-footer{
+footer {
     height: 27vh;
     width: 100%;
     flex: 1;
     background: #1B3560;
 }
 
-.footer-wrapper{
+.footer-wrapper {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
     padding: 27px;
-
     height: 100%;
 }
 
-.facebook, .instagram, .twitter{
+.facebook,
+.instagram,
+.twitter {
     background-color: #fff;
     border-radius: 50%;
     align-items: center;
+    justify-content: center;
     width: 42px;
     display: flex;
     height: 42px;
     flex-shrink: 0;
 }
 
-.social-medias{
+.social-medias {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 200px;
-
-
 }
 
-.privacity{
+.privacity {
     color: #FFF;
     text-align: center;
     font-family: Montserrat;
     font-size: 7.5px;
-    font-style:initial;
+    font-style: initial;
     font-weight: 300;
     line-height: normal;
-    
+
     display: flex;
     flex-direction: column;
     gap: 20px;

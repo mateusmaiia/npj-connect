@@ -5,18 +5,18 @@ import MenuIcon from '../../assets/menu.svg'
 
 
 export function Header() {
+
+    function handleMenuClick() {
+        console.log('handleMenu')
+        let navList = document.querySelector('ul.nav-list')
+    }
+
     return (
         <header>
 
             <nav >
                 <div className='logo'>
-                    <a href="">
-                        <img
-                            className='logo-icon'
-                            src={Logo}
-                            alt="Logo"
-                        />
-                    </a>
+                    <img className='logo-icon' src={Logo} alt="Logo" onClick={handleMenuClick()} />
 
                 </div>
                 <div className='mobile-menu'>
