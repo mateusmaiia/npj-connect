@@ -6,11 +6,14 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './style.css';
+
 export function OffcanvasExample() {
   return (
     <>
       {['sm'].map((expand) => (
-        <Navbar key={expand} expand={expand} className="bg-body-tertiary mb-3">
+        <Navbar key={expand} expand={expand} className="bg-body-tertiary mb-30">
           <Container className='espaco' fluid>
             <Navbar.Brand href="#">Navbar Offcanvas</Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
@@ -51,5 +54,3 @@ export function OffcanvasExample() {
     </>
   );
 }
-
-import 'bootstrap/dist/css/bootstrap.min.css';
