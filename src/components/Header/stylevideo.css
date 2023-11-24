@@ -102,7 +102,7 @@ main {
     margin-left: 0;
     opacity: 0;
   }
-<<<<<<< HEAD
+
 
   .mobile-menu {
     display: block;
@@ -136,7 +136,7 @@ main {
 .mobile-menu.active .line3 {
   transform: rotate(45deg) translate(-5px, -7px);
 }
-=======
+
   
   .mobile-menu.active .line3 {
     transform: rotate(45deg) translate(-5px, -7px);
@@ -203,4 +203,3 @@ main {
     line-height: normal !important;
     cursor: pointer;
   }
->>>>>>> 16edde0 (modal)
