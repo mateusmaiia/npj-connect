@@ -102,6 +102,7 @@ main {
     margin-left: 0;
     opacity: 0;
   }
+<<<<<<< HEAD
 
   .mobile-menu {
     display: block;
@@ -135,3 +136,71 @@ main {
 .mobile-menu.active .line3 {
   transform: rotate(45deg) translate(-5px, -7px);
 }
+=======
+  
+  .mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
+
+  .custom-modal {
+    border-radius: 31px !important;
+    background: #D9D9D9 !important;
+    width: 309px !important;
+    height: 191px !important;
+    flex-shrink: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    padding: 34px !important;
+    height: 182px !important;
+    border: none !important;
+
+  }
+  
+  .button-modal {
+    margin-top: 27px !important;
+    width: 200px !important;
+    height: 32px !important;
+    flex-shrink: 0 !important;
+    border-radius: 31px !important;
+    background: #1B3560 !important;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) !important;
+    color: #fff !important;
+
+
+    font-family: Montserrat  !important;
+    font-size: 20.324px !important;
+    font-style: normal !important;
+    font-weight: 800 !important;
+    line-height: normal !important;
+  }
+  
+  .title-modal {
+    color: #1B3560 !important;
+    font-family: Montserrat !important;
+    font-size: 33.591px !important;
+    font-style: normal !important;
+    font-weight: 800 !important;
+    line-height: normal !important;
+    margin-bottom: -10px !important;
+  }
+
+  .possuiconta{
+    margin-top: 1.2px !important;
+    
+    font-family: Montserrat !important;
+    font-size: 11.472px !important;
+    font-style: normal !important;
+   
+  }
+
+  .entrar{
+    color: #000 !important;
+    font-family: Montserrat !important;
+    font-size: 11.472px !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    line-height: normal !important;
+    cursor: pointer;
+  }
+>>>>>>> 16edde0 (modal)
