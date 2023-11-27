@@ -52,11 +52,10 @@ export function Header() {
           <div className={`line4 ${isMobileMenuOpen ? 'active' : ''}`}></div>
         </div>
         <div className={`user-icon-wrapper ${isMobileMenuOpen ? 'with-menu' : ''}`}>
-          <a href='/' className='icon' onClick={handleOpenModal}>
-            <img className='user-icon' src={UserIcon} alt='' />
-          </a>
+         
         </div>
         <ul className={`nav-list ${isMobileMenuOpen ? 'active' : ''}`}>
+        
           <li>
             <a href='#'>Sobre</a>
           </li>
@@ -69,6 +68,10 @@ export function Header() {
           <li>
             <a href='#'>Perguntas Frequentes</a>
           </li>
+
+          <a href='/' className='icon' onClick={handleOpenModal}>
+            <img className='user-icon' src={UserIcon} alt='' />
+          </a>
         </ul>
         <Modal
           open={isModalOpen}
