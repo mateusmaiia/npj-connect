@@ -15,7 +15,7 @@ a:hover {
 
 .icon {
 
-  margin-left: 20px;
+  margin-left: 260px;
 }
 
 .logo {
@@ -79,20 +79,28 @@ main {
   transition: 0.3s;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 884px) {
   body {
     overflow-x: hidden;
   }
 
+  .user-icon-wrapper {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transition: all 0.3s ease-in-out; /* Adicionado para suavizar a transição */
+  }
+
   .nav-list {
     position: absolute;
-    top: 8vh;
+    top: 7.64vh;
     right: 0;
     width: 50vw;
-    height: 92vh;
-    background: #23232e;
+    height: 100vh;
+    background: rgba(217, 217, 217, 0.80);
     flex-direction: column;
     align-items: center;
+    gap: -400px;
     justify-content: space-around;
     transform: translateX(100%);
     transition: transform 0.3s ease-in;
@@ -100,12 +108,40 @@ main {
 
   .nav-list li {
     margin-left: 0;
+    margin-top: -50px;
     opacity: 0;
+    transition: opacity 0.3s ease-in-out;
   }
-
 
   .mobile-menu {
     display: block;
+    cursor: pointer;
+  }
+
+  .mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+
+  .mobile-menu.active .line2 {
+    opacity: 0;
+  }
+
+  .mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
+
+  .user-icon-wrapper.active {
+    /* Ajuste o estilo conforme necessário para a posição do ícone quando o menu está aberto */
+    left: calc(50% - 25px); /* Ou o valor que você achar apropriado */
+    top: 15px; /* Ou o valor que você achar apropriado */
+  }
+
+  .nav-list.active {
+    transform: translateX(0);
+  }
+
+  .nav-list.active li {
+    opacity: 1;
   }
 }
 
@@ -202,4 +238,11 @@ main {
     font-weight: 700 !important;
     line-height: normal !important;
     cursor: pointer;
+  }
+
+
+  .nav-list-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }

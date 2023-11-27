@@ -1,13 +1,12 @@
-
+import  { useState } from 'react';
 import './stylevideo.css';
 import Logo from '../../assets/npj_com_borda_1.svg';
 import UserIcon from '../../assets/mdi_user.svg';
-import * as React from 'react';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
-
+import { Link } from 'react-router-dom';
 
 const modalStyle = {
   position: 'absolute',
@@ -22,16 +21,20 @@ const modalStyle = {
 };
 
 export function Header() {
-
-  const [isModalOpen, setModalOpen] = React.useState(false);
+  const [isModalOpen, setModalOpen] = useState(false);
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const handleOpenModal = (event) => {
-    event.preventDefault()
+    event.preventDefault();
     setModalOpen(true);
   };
 
   const handleCloseModal = () => {
     setModalOpen(false);
+  };
+
+  const handleToggleMobileMenu = () => {
+    setMobileMenuOpen(!isMobileMenuOpen);
   };
 
   return (
@@ -42,18 +45,23 @@ export function Header() {
             <img className='logo-icon' src={Logo} alt='Logo' />
           </a>
         </div>
-        <div className='mobile-menu'>
-          <div className='line1'></div>
-          <div className='line2'></div>
-          <div className='line3'></div>
-          <div className='line4'></div>
+        <div className={`mobile-menu ${isMobileMenuOpen ? 'active' : ''}`} onClick={handleToggleMobileMenu}>
+          <div className={`line1 ${isMobileMenuOpen ? 'active' : ''}`}></div>
+          <div className={`line2 ${isMobileMenuOpen ? 'active' : ''}`}></div>
+          <div className={`line3 ${isMobileMenuOpen ? 'active' : ''}`}></div>
+          <div className={`line4 ${isMobileMenuOpen ? 'active' : ''}`}></div>
         </div>
-        <ul className='nav-list'>
+        <div className={`user-icon-wrapper ${isMobileMenuOpen ? 'with-menu' : ''}`}>
+          <a href='/' className='icon' onClick={handleOpenModal}>
+            <img className='user-icon' src={UserIcon} alt='' />
+          </a>
+        </div>
+        <ul className={`nav-list ${isMobileMenuOpen ? 'active' : ''}`}>
           <li>
             <a href='#'>Sobre</a>
           </li>
           <li>
-            <a href='#'>Quem somos?</a>{' '}
+            <a href='#'>Quem somos?</a>
           </li>
           <li>
             <a href='#'>O que fazemos?</a>
@@ -61,26 +69,20 @@ export function Header() {
           <li>
             <a href='#'>Perguntas Frequentes</a>
           </li>
-          <a href='/' className='icon' onClick={handleOpenModal}>
-            <img className='user-icon' src={UserIcon} alt='' />
-          </a>
         </ul>
         <Modal
           open={isModalOpen}
           onClose={handleCloseModal}
           aria-labelledby='modal-modal-title'
           aria-describedby='modal-modal-description'
-          
         >
           <Box style={modalStyle} className='custom-modal'>
             <Typography id='modal-modal-title' variant='h6' component='h2' className='title-modal'>
               CONECTE-SE
             </Typography>
-
             <Button className='button-modal'>CADASTRAR</Button>
-
             <Typography id='modal-modal-description' className='possuiconta' sx={{ mt: 2 }}>
-              Já possui conta? <span className='entrar'>Entrar</span>
+              Já possui conta? <span><Link className='entrar' to="/form">Entrar</Link></span>
             </Typography>
           </Box>
         </Modal>
@@ -88,4 +90,3 @@ export function Header() {
     </header>
   );
 }
-

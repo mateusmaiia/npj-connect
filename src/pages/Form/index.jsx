@@ -3,8 +3,11 @@
 
 export function Form(){
     return(
-        <form action="">
-            
-        </form>
+        <>
+            <h1>Form</h1>
+            <form action="">
+                
+            </form>
+        </>
     )
 }
