@@ -78,8 +78,8 @@ main{
     display: block;
     border-bottom: 5px solid #fff;
     width: 70px;
+    margin-left:  1px;
     
-    margin-right: -153px;
     align-items: flex-start;
 }
 
