@@ -1,0 +1,68 @@
+.text-top{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 14.009px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+
+    margin-bottom: 23px;
+    display: block;
+}
+
+.form-wrapper{
+    width: 100%;
+    height: 800px;
+    border: 1px solid yellow;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px;
+}
+
+/*.form-comp{
+    width: 100%;
+    border: orange;
+   
+}*/
+.form-contents-wrapper{
+    /*border: 1px solid orange;*/
+    height: 100%;
+    width: 75%;
+}
+
+button{
+    margin-top: 27px;
+    margin-bottom: 2px;
+
+    width: 234px;
+    height: 27px;
+    flex-shrink: 0;
+    border-radius: 36.27px;
+    background: #1B3560;
+    box-shadow: 0px 4.68px 4.68px 0px rgba(0, 0, 0, 0.25);
+    border: none;
+
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 19.967px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+
+.entrarForm{
+    color: #000 !important;
+    font-family: Montserrat !important;
+    font-size: 11.472px !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    line-height: normal !important;
+    cursor: pointer;
+  }
+
+.possuicontaForm{
+    margin-left: 10px;
+    font-size: 11.472px !important;
+}

@@ -28,6 +28,7 @@ export function MainScreen(){
                     CONECTE-SE
                 </button>
             </section>
+            
         </main>
     )
 }
