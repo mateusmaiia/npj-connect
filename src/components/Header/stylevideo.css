@@ -59,6 +59,8 @@ main {
   list-style: none;
   display: flex;
   padding-top: 10px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav-list li {
@@ -67,6 +69,7 @@ main {
   letter-spacing: 0;
   /*estava 3px*/
   margin-left: 24px;
+  white-space: nowrap;
 }
 
 .mobile-menu {
