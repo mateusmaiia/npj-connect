@@ -14,7 +14,7 @@ export const router = createBrowserRouter([
         element: <Form />
     },
     {
-        path: '/entrar',
+        path: '/login',
         element: <Entrar />
     }
 ])

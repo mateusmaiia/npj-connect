@@ -4,7 +4,7 @@ header#header-form {
     flex-shrink: 0;
     padding: 8px 32px;
     border-radius: 0px 0px 22.169px 22.169px;
-    background: var(--dark-blue-b);
+    background: var(--dark-blue-bg);
 
     & .text {
         text-align: start;

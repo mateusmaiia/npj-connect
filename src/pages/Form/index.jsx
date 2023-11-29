@@ -80,7 +80,7 @@ export function Form(){
                         </button>
                         <div >
                             <span className='possuicontaForm'>JA POSSUI CONTA? </span>
-                            <span><Link to="/entrar"><strong className='entrarForm' >ENTRAR</strong></Link></span></div>
+                            <span><Link to="/login"><strong className='entrarForm' >ENTRAR</strong></Link></span></div>
                     </form>
                 </div>
                 

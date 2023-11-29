@@ -1,5 +1,16 @@
 div#login-wrapper {
 
+    & .text-top{
+        color: #000;
+        font-family: Montserrat;
+        font-size: 14.009px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+
+        margin-bottom: 20px !important;
+    }
+
     & .buttonEntrar {
         width: 179px;
         height: 25px;
@@ -18,7 +29,7 @@ div#login-wrapper {
 
     & .esqueceuSenha {
         display: block;
-        margin-top: -10px;
+        margin-top: 6px;
         margin-bottom: 22px;
         color: #F00;
         font-family: Montserrat;
@@ -32,7 +43,7 @@ div#login-wrapper {
         height: 500px;
         width: 100%;
 
-        border: 1px solid yellow;
+        /*border: 1px solid yellow;*/
         display: flex;
         align-items: center;
         flex-direction: column;

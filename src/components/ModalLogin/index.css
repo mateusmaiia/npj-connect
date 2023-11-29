@@ -1,0 +1,58 @@
+.title-modal{
+    color: #1B3560 !important;
+    font-family: Montserrat !important;
+    font-size: 32.591px !important;
+    font-style: normal !important;
+    font-weight: 800 !important;
+    line-height: normal !important;
+}
+
+.custom-modal{
+    width: 309px !important;
+    height: 180px;
+    flex-shrink: 0;
+    border-radius: 31px;
+    background: #D9D9D9;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-modal{
+    margin-top: 8px !important;
+
+    width: 234px !important;
+    height: 37.44px !important;
+    flex-shrink: 0 !important;
+    border-radius: 36.27px !important;
+    background: #1B3560 !important;
+    box-shadow: 0px 4.68px 4.68px 0px rgba(0, 0, 0, 0.25) !important;
+
+    color: #D9D9D9 !important;
+    font-family: Montserrat !important;
+    font-size: 23.779px !important;
+    font-style: normal !important;
+    font-weight: 900 !important;
+    line-height: normal !important;
+}
+
+.possuiconta {
+    margin-top: 12px !important;
+
+    
+    word-spacing: 1.5;
+    font-size: 10.472px !important; 
+    font-style: normal;
+  }
+
+.entrar {
+    letter-spacing: 1px !important;
+    color: #000;
+    font-size: 11.472px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+}

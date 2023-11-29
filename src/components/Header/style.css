@@ -15,6 +15,8 @@ header#header-wrapper {
   }
 
   & nav#menu {
+    width: 100%;
+
     display: flex;
     justify-content: space-between;
     padding-left: 40px;
@@ -22,6 +24,8 @@ header#header-wrapper {
     align-items: center;
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
     background: #1B3560;
+
+    
 
     height: var(--nav-height);
     position: fixed;
@@ -169,18 +173,19 @@ header#header-wrapper {
     }
   }
 
-  & .custom-modal {
-    border-radius: 31px;
-    background: #D9D9D9;
-    width: 309px;
-    height: 191px;
-    flex-shrink: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 34px;
-    height: 182px;
-    border: none;
+ /* & .custom-modal {
+    border-radius: 31px !important;
+    background: #D9D9D9 !important;
+    width: 309px !important;
+    height: 191px !important;
+    flex-shrink: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    padding: 34px !important;
+    height: 182px !important;
+    border: none !important;
+    border: 1px solid #1B3560 !important;
   }
 
   & .button-modal {
@@ -224,7 +229,7 @@ header#header-wrapper {
     font-weight: 700;
     line-height: normal;
     cursor: pointer;
-  }
+  }*/
 
   & .nav-list-wrapper {
     display: flex;

@@ -1,8 +1,20 @@
 import './style.css'
 import FAQDropDown from '../FAQDropDown';
-
+import { useState } from 'react';
+import { ModalLogin } from '../ModalLogin';
 
 export function MainScreen() {
+    const [isModalOpen, setModalOpen] = useState(false);
+
+    const handleOpenModal = () => {
+        setModalOpen(true);
+    };
+
+    const handleCloseModal = () => {
+        setModalOpen(false);
+    };
+
+
     return (
         <main id='main-screen-wrapper'>
             <section className='container-wrapper'>
@@ -24,9 +36,10 @@ export function MainScreen() {
                         jurídicos encontrar facilmente advogados qualificados para
                         suas necessidades específicas.
                     </p>
-                    <button className='button'>
+                    <button className='button' onClick={handleOpenModal}>
                         CONECTE-SE
                     </button>
+                    <ModalLogin isOpen={isModalOpen} onClose={handleCloseModal} />
                 </article>
 
                 <article id='goals' className='bg-white'>
