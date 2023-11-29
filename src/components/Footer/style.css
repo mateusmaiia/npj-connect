@@ -1,17 +1,18 @@
 footer {
-    height: 27vh;
     width: 100%;
-    flex: 1;
-    background: #1B3560;
+    background: var(--dark-blue-bg);
+    display: flex;
+    flex-direction: column;
 }
 
 .footer-wrapper {
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
     gap: 20px;
-    padding: 27px;
-    height: 100%;
 }
 
 .facebook,
@@ -45,5 +46,6 @@ footer {
 
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    justify-content: center;
+    align-items: center;
 }

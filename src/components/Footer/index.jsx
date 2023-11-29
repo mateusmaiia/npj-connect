@@ -18,9 +18,8 @@ export function Footer(){
                         <img src={Twitter} alt="" />
                     </span>
                 </div>
-                <div  className='privacity'>
+                <div className='privacity'>
                     <p>Privacidade | Termos e Condições | Sobre | Ajuda | Contato</p>
-                
                     <p>2023. Todos os direitos reservados</p>
                 </div>
             </div>
