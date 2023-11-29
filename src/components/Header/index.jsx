@@ -85,9 +85,9 @@ export function Header() {
             <Typography id='modal-modal-title' variant='h6' component='h2' className='title-modal'>
               CONECTE-SE
             </Typography>
-            <Button className='button-modal'>CADASTRAR</Button>
+            <Button className='button-modal'><Link to="/form">CADASTRAR</Link></Button>
             <Typography id='modal-modal-description' className='possuiconta' sx={{ mt: 2 }}>
-              Já possui conta? <span><Link className='entrar' to="/form">Entrar</Link></span>
+              Já possui conta? <span><Link className='entrar' to="/entrar">Entrar</Link></span>
             </Typography>
           </Box>
         </Modal>

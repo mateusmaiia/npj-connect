@@ -1,0 +1,38 @@
+.buttonEntrar{
+    width: 179px;
+    height: 25px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background: #1B3560;
+    margin-top: -10px;
+
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 10.3px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.esqueceuSenha{
+    display: block;
+    margin-top: -10px;
+    margin-bottom: 22px ;
+    color: #F00;
+    font-family: Montserrat;
+    font-size: 10.528px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.form-wrapper-entrar{
+    height: 500px;
+    width: 100%;
+
+    border: 1px solid yellow;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px;
+}

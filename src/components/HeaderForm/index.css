@@ -1,0 +1,35 @@
+.header-form{
+    width: 100%;
+    height: 139.062px;
+    flex-shrink: 0;
+    padding: 8px 32px;
+    border-radius: 0px 0px 22.169px 22.169px;
+    background: #1B3560;
+}
+
+.text{
+    
+   
+    text-align: start;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 14.009px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.textYellow{
+    color: #FAD21D;
+    font-family: Montserrat;
+    font-size: 14.009px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.logo{
+    display: flex;
+    width: 100%;
+    justify-content: start;
+}

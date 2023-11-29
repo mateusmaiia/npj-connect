@@ -89,6 +89,7 @@ export function MainScreen() {
                 </article>
 
             </section>
+            
         </main>
     )
 }
