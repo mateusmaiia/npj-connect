@@ -1,5 +1,4 @@
 import  { useState } from 'react';
-import './stylevideo.css';
 import Logo from '../../assets/npj_com_borda_1.svg';
 import UserIcon from '../../assets/mdi_user.svg';
 import Box from '@mui/material/Box';
@@ -7,6 +6,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import { Link } from 'react-router-dom';
+import './style.css';
 
 
 // teste commitar
@@ -42,7 +42,7 @@ export function Header() {
 
   return (
     <header>
-      <nav>
+      <nav id='menu'>
         <div className='logo'>
           <a href=''>
             <img className='logo-icon' src={Logo} alt='Logo' />
@@ -58,7 +58,6 @@ export function Header() {
          
         </div>
         <ul className={`nav-list ${isMobileMenuOpen ? 'active' : ''}`}>
-        
           <li>
             <a href='#'>Sobre</a>
           </li>

@@ -1,4 +1,6 @@
-*{
-    scrollbar-width: thin; /* Para navegadores que suportam a propriedade scrollbar-width */
-    -ms-overflow-style: thin; /* Para Internet Explorer/Edge */
-  }
+* {
+  scrollbar-width: thin;
+  /* Para navegadores que suportam a propriedade scrollbar-width */
+  -ms-overflow-style: thin;
+  /* Para Internet Explorer/Edge */
+}
