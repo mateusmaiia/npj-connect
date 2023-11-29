@@ -1,9 +1,9 @@
-import './index.css'
+import './style.css'
 import PropTypes from 'prop-types';
 
 export function Input({ type, placeholder, value, onChange, label }) {
   return (
-    <div className='input-wrapper'>
+    <div id='input-wrapper'>
       <label>{label}</label>
       <input
         type={type}

@@ -4,7 +4,7 @@ import FAQDropDown from '../FAQDropDown';
 
 export function MainScreen() {
     return (
-        <main>
+        <main id='main-screen-wrapper'>
             <section className='container-wrapper'>
                 <article id='intro' className='bg-darkblue'>
                     <div>

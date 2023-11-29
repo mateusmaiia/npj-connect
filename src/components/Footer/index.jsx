@@ -5,8 +5,8 @@ import Twitter from '../../assets/mdi_twitter.svg'
 
 export function Footer(){
     return(
-        <footer>
-            <div className='footer-wrapper'>
+        <footer id='footer-wrapper'>
+            <div className='footer'>
                 <div className='social-medias'>
                     <span className='facebook'>
                         <img src={Facebook} alt="" />

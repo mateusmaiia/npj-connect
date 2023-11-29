@@ -1,11 +1,12 @@
 import Logo from '../../assets/npj_com_borda_1.svg';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import './index.css'
+
+import './style.css'
 
 export function HeaderForm({text, textYellow}){
     return(
-        <header className='header-form'>
+        <header id='header-form'>
             <div className='logo'>
                 <Link to="/">
                     <img src={Logo} alt="" />

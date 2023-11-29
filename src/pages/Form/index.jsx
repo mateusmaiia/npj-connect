@@ -1,8 +1,9 @@
 import { HeaderForm } from '../../components/HeaderForm'
 import { Input } from '../../components/Input'
 import { useState } from 'react'
-import './index.css'
 import { Link } from 'react-router-dom'
+
+import './style.css'
 
 export function Form(){
     const [cpf, setCpf] = useState('')
@@ -20,7 +21,7 @@ export function Form(){
         event.preventDefault()
     }
     return(
-        <div >
+        <div id='input-form'>
             <HeaderForm text={'CRIE SUA CONTA E VIVA A CONEXÃO DO'} textYellow={' ESCRITÓRIO DIGITAL!'}/>
             <div className='form-wrapper'>
                 

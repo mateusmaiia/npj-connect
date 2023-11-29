@@ -7,7 +7,7 @@ import Dropdown from 'react-bootstrap/Dropdown';
 function ButtonDarkExample() {
   return (
     <>
-      <div className="dropdowns">
+      <div id="dropdowns-wrapper">
 
         <Dropdown>
           <Dropdown.Toggle variant="">

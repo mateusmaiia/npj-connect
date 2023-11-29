@@ -1,0 +1,31 @@
+header#header-form {
+    width: 100%;
+    height: 140px;
+    flex-shrink: 0;
+    padding: 8px 32px;
+    border-radius: 0px 0px 22.169px 22.169px;
+    background: var(--dark-blue-b);
+
+    & .text {
+        text-align: start;
+        color: #FFF;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+    }
+
+    & .textYellow {
+        color: var(--yellow-text);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+    }
+
+    & .logo {
+        display: flex;
+        width: 100%;
+        justify-content: start;
+    }
+}
