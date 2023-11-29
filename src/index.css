@@ -3,24 +3,23 @@
   font-size: 62.5%;
   --dark-blue-text: #032677;
   --dark-blue-bg: #1B3560;
+  --yellow-text: #FAD21D;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
-  height: 100vh;
+  font-family: Montserrat;
+  font-weight: 500;
 }
 
 a {
   color: #fff;
   text-decoration: none;
   transition: 0.3s;
-}
 
-a:hover {
-  opacity: 0.7;
+  &:hover {
+    opacity: 0.7;
+  }
 }
