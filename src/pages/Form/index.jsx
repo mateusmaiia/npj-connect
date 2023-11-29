@@ -5,8 +5,14 @@ import { Link } from 'react-router-dom'
 
 import './style.css'
 
-export function Form(){
-    const [cpf, setCpf] = useState('')
+export function Form() {
+    const [nome, setNome] = useState('');
+    const [telefone, setTelefone] = useState('');
+    const [email, setEmail] = useState('');
+    const [dataNascimento, setDataNascimento] = useState('');
+    const [cpf, setCpf] = useState('');
+    const [senha, setSenha] = useState('');
+    const [confirmarSenha, setConfirmarSenha] = useState('');
 
     const formatarCPF = (value) => {
         const cpfAtual = value.replace(/\D/g, '');
@@ -17,44 +23,53 @@ export function Form(){
         }
     };
 
-    function submit(event){
-        event.preventDefault()
+    function submit(event) {
+        event.preventDefault();
+        // Lógica para enviar os dados do formulário
     }
-    return(
+
+    return (
         <div id='input-form'>
-            <HeaderForm text={'CRIE SUA CONTA E VIVA A CONEXÃO DO'} textYellow={' ESCRITÓRIO DIGITAL!'}/>
+            <HeaderForm text={'CRIE SUA CONTA E VIVA A CONEXÃO DO'} textYellow={' ESCRITÓRIO DIGITAL!'} />
             <div className='form-wrapper'>
-                
                 <div className='form-contents-wrapper'>
                     <span className='text-top'>Crie a sua conta agora mesmo!</span>
                     <form action="" onSubmit={submit}>
-                        <Input 
+                        <Input
                             type='text'
                             placeholder={'Nome completo'}
                             label={'Nome Completo:'}
+                            value={nome}
+                            onChange={(e) => setNome(e.target.value)}
                             required
                         />
-                         <Input 
+                        <Input
                             type='tel'
-                            placeholder={'Telefone (com DDD'}
+                            placeholder={'Telefone (com DDD)'}
                             label={'Telefone:'}
+                            value={telefone}
+                            onChange={(e) => setTelefone(e.target.value)}
                             required
                         />
-                       <Input 
+                        <Input
                             type='email'
                             placeholder={'seu@melhoremail.com'}
                             label={'E-mail:'}
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
                             required
                         />
-                        <Input 
+                        <Input
                             type='date'
                             placeholder={'dd/mm/aaaa'}
                             label={'Data de Nascimento:'}
+                            value={dataNascimento}
+                            onChange={(e) => setDataNascimento(e.target.value)}
                             required
                         />
-                        <Input 
+                        <Input
                             max="14"
-                            type='cpf'
+                            type='text'
                             placeholder={'xxx.xxx.xxx-xx'}
                             label={'CPF:'}
                             value={cpf}
@@ -62,31 +77,33 @@ export function Form(){
                             maxLength="14"
                             required
                         />
-                        <Input 
+                        <Input
                             type='password'
                             placeholder={'Crie sua senha'}
                             label={'Senha:'}
+                            value={senha}
+                            onChange={(e) => setSenha(e.target.value)}
                             required
                         />
-                        <Input 
+                        <Input
                             type='password'
                             placeholder={'Confirme sua senha:'}
                             label={'Confirme a senha:'}
+                            value={confirmarSenha}
+                            onChange={(e) => setConfirmarSenha(e.target.value)}
                             required
                         />
 
                         <button type='submit'>
                             Criar conta!
                         </button>
-                        <div >
+                        <div>
                             <span className='possuicontaForm'>JA POSSUI CONTA? </span>
-                            <span><Link to="/login"><strong className='entrarForm' >ENTRAR</strong></Link></span></div>
+                            <span><Link to="/login"><strong className='entrarForm'>ENTRAR</strong></Link></span>
+                        </div>
                     </form>
                 </div>
-                
             </div>
         </div>
     )
 }
-
-//type, placeholder, value, onChange, label
