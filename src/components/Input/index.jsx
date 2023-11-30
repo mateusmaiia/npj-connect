@@ -1,7 +1,7 @@
 import './style.css'
 import PropTypes from 'prop-types';
 
-export function Input({ type, placeholder, value, onChange, label }) {
+export function Input({ type, placeholder, value, onChange, label, autoFocus }) {
   return (
     <div id='input-wrapper'>
       <label>{label}</label>
@@ -10,6 +10,7 @@ export function Input({ type, placeholder, value, onChange, label }) {
         placeholder={placeholder}
         value={value}
         onChange={onChange}
+        autoFocus={autoFocus}
       />
     </div>
   );
@@ -20,5 +21,6 @@ Input.propTypes = {
   placeholder: PropTypes.string,
   value: PropTypes.any,
   onChange: PropTypes.func,
-  label: PropTypes.string
+  label: PropTypes.string,
+  autoFocus: PropTypes.bool
 };

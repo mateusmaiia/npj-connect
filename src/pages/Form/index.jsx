@@ -35,7 +35,9 @@ export function Form() {
                 <div className='form-contents-wrapper'>
                     <span className='text-top'>Crie a sua conta agora mesmo!</span>
                     <form action="" onSubmit={submit}>
-                        <Input
+
+                        <Input 
+                            autoFocus
                             type='text'
                             placeholder={'Nome completo'}
                             label={'Nome Completo:'}

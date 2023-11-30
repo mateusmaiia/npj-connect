@@ -21,6 +21,7 @@ export function Entrar() {
                             placeholder={'Login'}
                             label={'E-mail ou CPF:'}
                             required
+                            autoFocus
                         />
                         <Input
                             type='password'
