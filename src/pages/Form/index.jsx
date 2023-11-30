@@ -2,17 +2,13 @@ import { HeaderForm } from '../../components/HeaderForm'
 import { Input } from '../../components/Input'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { useForm } from 'react-hook-form'
 
 import './style.css'
 
 export function Form() {
-    const [nome, setNome] = useState('');
-    const [telefone, setTelefone] = useState('');
-    const [email, setEmail] = useState('');
-    const [dataNascimento, setDataNascimento] = useState('');
+    const {register, handleSubmit} = useForm
     const [cpf, setCpf] = useState('');
-    const [senha, setSenha] = useState('');
-    const [confirmarSenha, setConfirmarSenha] = useState('');
 
     const formatarCPF = (value) => {
         const cpfAtual = value.replace(/\D/g, '');
@@ -23,8 +19,8 @@ export function Form() {
         }
     };
 
-    function submit(event) {
-        event.preventDefault();
+    function onSubmit(data) {
+        console.log(data)
         // Lógica para enviar os dados do formulário
     }
 
@@ -34,39 +30,43 @@ export function Form() {
             <div className='form-wrapper'>
                 <div className='form-contents-wrapper'>
                     <span className='text-top'>Crie a sua conta agora mesmo!</span>
-                    <form action="" onSubmit={submit}>
+                    <form onSubmit={() => handleSubmit(onSubmit)()}>
 
                         <Input 
                             autoFocus
                             type='text'
                             placeholder={'Nome completo'}
                             label={'Nome Completo:'}
-                            value={nome}
-                            onChange={(e) => setNome(e.target.value)}
-                            required
+                            {...register('nome', {
+                                require: true,    
+                            })}
+                            
                         />
                         <Input
                             type='tel'
                             placeholder={'Telefone (com DDD)'}
                             label={'Telefone:'}
-                            value={telefone}
-                            onChange={(e) => setTelefone(e.target.value)}
-                            required
+                            {...register('telefone', {
+                                required: true,
+                            })}
+                            
                         />
                         <Input
                             type='email'
                             placeholder={'seu@melhoremail.com'}
                             label={'E-mail:'}
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
+                            {...register('email', {
+                                required: true,
+                            })}
                             required
                         />
                         <Input
                             type='date'
                             placeholder={'dd/mm/aaaa'}
                             label={'Data de Nascimento:'}
-                            value={dataNascimento}
-                            onChange={(e) => setDataNascimento(e.target.value)}
+                            {...register('dataNascimento', {
+                                required: true,
+                            })}
                             required
                         />
                         <Input
@@ -83,16 +83,18 @@ export function Form() {
                             type='password'
                             placeholder={'Crie sua senha'}
                             label={'Senha:'}
-                            value={senha}
-                            onChange={(e) => setSenha(e.target.value)}
+                            {...register('senha', {
+                                required: true,
+                            })}
                             required
                         />
                         <Input
                             type='password'
                             placeholder={'Confirme sua senha:'}
                             label={'Confirme a senha:'}
-                            value={confirmarSenha}
-                            onChange={(e) => setConfirmarSenha(e.target.value)}
+                            {...register('confirmarSenha', {
+                                required: true,
+                            })}
                             required
                         />
 
